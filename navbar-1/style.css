@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  /* height: 50px; */
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header > .brand__name {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header > div > nav > ul {
+  list-style-type: none;
+}
+header > div > nav > ul > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+header > div > nav > ul > li:last-child {
+  margin-right: 10px;
+}
+
+header > div > nav > ul > li > a {
+  position: relative;
+  padding: 5px;
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.8);
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s;
+}
+header > div > nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  background: #7b3df6;
+  transition: all 0.5s;
+}
+header > div > nav > ul > li > a:hover {
+  color: #7b3df6;
+}
+header > div > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+header > div > .cta {
+  padding: 10px 30px;
+  background: linear-gradient(45deg, #5e21f3, #fab1ff);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px #00000014;
+  transition: all 0.5s;
+}
+header > div > .cta:hover {
+  box-shadow: 0px 0px 0px #00000014;
+}
+
+/* Section */
+section {
+  min-height: 100vh;
+  background: linear-gradient(45deg, red, blue);
+}
